@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- --------- UNICONS ---------- -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- --------- FAVICON ---------- -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <style>
+    /*Styling untuk tabel*/
+    table {
+      width: 90%; /* Mengurangi lebar tabel agar ada ruang di kiri dan kanan */
+      margin: 20px auto; /* Memberikan margin atas/bawah dan auto kiri/kanan agar tabel di tengah */
+      border-collapse: collapse; /* Menggabungkan border antar sel */
+    }
+
+    th, td {
+      border: 1px solid rgb(0, 0, 0); /* Menambahkan border pada setiap sel */
+      padding: 8px;
+      text-align: left; /* Menyelaraskan teks ke kiri */
+    }
+
+    th {
+      background-color: #86c6cd;
+      text-align: center; /* Memberi warna latar pada header tabel */
+    }
+
+    h2 {
+      margin-left: 20px; /* Menambahkan margin kiri */
+      margin-right: 20px; /* Menambahkan margin kanan */
+      padding: 10px 0;
+      
+       /* Menambahkan sedikit ruang di atas dan bawah teks */
+    }
+    p {
+      margin-left: 20px; /* Menambahkan margin kiri */
+      margin-right: 20px; /* Menambahkan margin kanan */
+      padding: 10px 0; /* Menambahkan sedikit ruang di atas dan bawah teks */
+    }
+    .code-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-height: 300px; /* Atur tinggi maksimum */
+            overflow-y: auto; /* Tambahkan scrollbar vertikal */
+            background-color: #f9f9f9; /* Warna latar belakang */
+            font-family: monospace; /* Font monospace untuk sintaks */
+        }
+    </style>
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Tabel </p>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="index (2).html" class="nav-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="tutorial.html" class="nav-link">Tutorial</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="tabel.html" class="nav-link active-link">Tutorial Tabel</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+                <a href="form.html" class="nav-link">Tutorial Form</a>
+                <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="index (2).html" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+        </div>
+        <div class="nav-button">
+          <button class="btn">
+            Download CV <i class="uil uil-file-alt"></i>
+          </button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+      </body>
+      <br>
+    </br>
+
+      <!-- -------------- MAIN ---------------- -->
+      <section id="content">
+        <br />
+        <br>
+      </br>
+        <body>
+            
+    
+        <h2>Tutorial Membuat Tabel</h2>
+        <p>
+          Tabel dalam HTML digunakan untuk menampilkan data dalam format baris dan kolom. 
+          Struktur dasar tabel terdiri dari elemen <code>&lt;table&gt;</code> yang berfungsi sebagai wadah tabel. 
+          Di dalam tabel terdapat dua bagian utama: 
+          <code>&lt;thead&gt;</code> untuk mendefinisikan header tabel dan 
+          <code>&lt;tbody&gt;</code> untuk konten data.
+        </p>
+        <p>
+          Bagian <code>&lt;thead&gt;</code> digunakan untuk mendefinisikan header tabel, yang biasanya berisi judul kolom yang 
+          menjelaskan jenis data yang akan ditampilkan. Setiap kolom dalam header tabel didefinisikan menggunakan elemen 
+          <code>&lt;th&gt;</code>, yang memberikan penekanan visual pada judul tersebut.
+        </p>
+        <p>
+          Sementara itu, bagian <code>&lt;tbody&gt;</code> berisi konten data dari tabel. Di dalam <code>&lt;tbody&gt;</code>, 
+          setiap baris data didefinisikan menggunakan elemen <code>&lt;tr&gt;</code>, dan setiap sel data dalam baris tersebut 
+          didefinisikan menggunakan elemen <code>&lt;td&gt;</code>. Ini memudahkan pemisahan antara header dan isi tabel, 
+          serta membuatnya lebih mudah untuk dibaca.
+        </p>
+        <p>
+          Berikut contoh sintax untuk membuat tabel dengan kolom first name, last name, age, dan alamat 
+        </p>
+        <div class="code-container">
+        <pre>
+        <code>
+        &lt;table&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;First Name&lt;/th&gt;
+              &lt;th&gt;Last Name&lt;/th&gt;
+              &lt;th&gt;Age&lt;/th&gt;
+              &lt;th&gt;Alamat&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Mia&lt;/td&gt;
+              &lt;td&gt;Anggreini&lt;/td&gt;
+              &lt;td&gt;20&lt;/td&gt;
+              &lt;td&gt;Trihanggo&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        </code>
+        </pre>
+        </div>
+        <p>
+          Berikut hasilnya : 
+        </p>
+        
+        <!-- Membuat tabel sederhana -->
+        <table>
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+              <th>Alamat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mia</td>
+              <td>Anggreini</td>
+              <td>20</td>
+              <td>Trihanggo</td>
+            </tr>
+            <tr>
+              <td>Kia</td>
+              <td>Natasha</td>
+              <td>30</td>
+              <td>Sleman</td>
+            </tr>
+            <tr>
+              <td>Jihan</td>
+              <td>Eka</td>
+              <td>40</td>
+              <td>Bantul</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br />
+        <h2>Data Mahasiswa</h2>
+        <p>
+          Berikut merupakan sintax untuk membuat data mahasiswa dengan kolom NIM, Nama, IPK Semester 1-8, jurusan, dan fakultas
+        </p>
+        <div class="code-container">
+          <pre><code>&lt;table&gt;
+          &lt;thead&gt;
+              &lt;tr&gt;
+                  &lt;th&gt;NIM&lt;/th&gt;
+                  &lt;th&gt;Nama&lt;/th&gt;
+                  &lt;th&gt;IPK Sem 1&lt;/th&gt;
+                  &lt;th&gt;IPK Sem 2&lt;/th&gt;
+                  &lt;th&gt;IPK Sem 3&lt;/th&gt;
+                  &lt;th&gt;IPK Sem 4&lt;/th&gt;
+                  &lt;th&gt;IPK Sem 5&lt;/th&gt;
+                  &lt;th&gt;IPK Sem 6&lt;/th&gt;
+                  &lt;th&gt;IPK Sem 7&lt;/th&gt;
+                  &lt;th&gt;IPK Sem 8&lt;/th&gt; &lt;!-- Kolom Sem 8 --&gt;
+                  &lt;th&gt;Jurusan&lt;/th&gt; &lt;!-- Kolom Jurusan --&gt;
+                  &lt;th&gt;Fakultas&lt;/th&gt; &lt;!-- Kolom Fakultas --&gt;
+              &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;5220311004&lt;/td&gt;
+                  &lt;td&gt;Mia Anggreini&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;Sistem Informasi&lt;/td&gt; &lt;!-- Jurusan --&gt;
+                  &lt;td&gt;FST&lt;/td&gt; &lt;!-- Fakultas --&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;5220311004&lt;/td&gt;
+                  &lt;td&gt;Mia Anggreini&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;Sistem Informasi&lt;/td&gt;
+                  &lt;td&gt;FST&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;5220311004&lt;/td&gt;
+                  &lt;td&gt;Mia Anggreini&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;Sistem Informasi&lt;/td&gt; &lt;!-- Jurusan --&gt;
+                  &lt;td&gt;FST&lt;/td&gt; &lt;!-- Fakultas --&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;5220311004&lt;/td&gt;
+                  &lt;td&gt;Mia Anggreini&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;4&lt;/td&gt;
+                  &lt;td&gt;Sistem Informasi&lt;/td&gt; &lt;!-- Jurusan --&gt;
+                  &lt;td&gt;FST&lt;/td&gt; &lt;!-- Fakultas --&gt;
+              &lt;/tr&gt;
+          &lt;/tbody&gt;
+      &lt;/table&gt;</code></pre>
+      </div>
+      <p>
+        Berikut merupakan hasil dari sintax tabel data mahasiswa dengan kolom NIM, Nama, IPK Semester 1-8, jurusan, dan fakultas
+      </p>
+        <table>
+          <thead>
+            <tr>
+              <th>NIM</th>
+              <th>Nama</th>
+              <th>IPK Sem 1</th>
+              <th>IPK Sem 2</th>
+              <th>IPK Sem 3</th>
+              <th>IPK Sem 4</th>
+              <th>IPK Sem 5</th>
+              <th>IPK Sem 6</th>
+              <th>IPK Sem 7</th>
+              <th>IPK Sem 8</th> <!-- Kolom Sem 8 -->
+              <th>Jurusan</th> <!-- Kolom Jurusan -->
+              <th>Fakultas</th> <!-- Kolom Fakultas -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5220311034</td>
+              <td>Yesty Anggela</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>Sistem Informasi</td> <!-- Jurusan -->
+              <td>FST</td> <!-- Fakultas -->
+            </tr>
+
+            <tr>
+              <td>5220311017</td>
+              <td>Fitrah Handayani</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>Sistem Informasi</td>
+              <td>FST</td>
+            </tr>
+            <tr>
+                <td>5220311022</td>
+                <td>Nassa Fadilla</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>Sistem Informasi</td> <!-- Jurusan -->
+                <td>FST</td> <!-- Fakultas -->
+              </tr>
+              <tr>
+                <td>5220311004</td>
+                <td>Mia Anggreini</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>Sistem Informasi</td> <!-- Jurusan -->
+                <td>FST</td> <!-- Fakultas -->
+              </tr>
+          </tbody>
+        </table>
+      </section>
+    
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link ----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
